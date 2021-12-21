@@ -24,8 +24,9 @@ int main(){
     int target=9;
     vector<int> nums={2,7,11,15};
     vector<int> result=twoSum(nums,target);
+
     for(int i=0;i<result.size();i++){
         cout<<result[i]<<" ";
     }
-    return 0;
+    return 1;
 }
