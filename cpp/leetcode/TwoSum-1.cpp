@@ -3,20 +3,21 @@
 using namespace std;
 
 vector<int> twoSum(vector<int> &nums,int target){
-        unordered_map<int,int> map;
-        vector<int> result(2,0);
+    unordered_map<int,int> map;
+    vector<int> result(2,0);
 
-        for(int i=0;i<nums.size();i++){
-            if(map.find(target-nums[i])!=map.end()){
-                result[0]=i;
-                result[1]=map[target-nums[i]];
-                return result;
-            }
-            else{
-                map[nums[i]]=i;
-            }
+    for(int i=0;i<nums.size();i++){
+        if(map.find(target-nums[i])!=map.end()){
+            result[0]=i;
+            result[1]=map[target-nums[i]];
+            return result;
         }
-        return result;
+        else{
+            map[nums[i]]=i;
+        }
+    }
+    
+    return result;
 }
 
 int main(){
