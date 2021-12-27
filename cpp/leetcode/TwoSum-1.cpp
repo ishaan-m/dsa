@@ -16,7 +16,7 @@ vector<int> twoSum(vector<int> &nums,int target){
             map[nums[i]]=i;
         }
     }
-    
+
     return result;
 }
 
@@ -29,6 +29,6 @@ int main(){
     for(int i=0;i<result.size();i++){
         cout<<result[i]<<"  ";
     }
-    
+
     return 1;
 }
