@@ -3,6 +3,7 @@
 using namespace std;
 
 vector<int> twoSum(vector<int> &nums,int target){
+
     unordered_map<int,int> map;
     vector<int> result(2,0);
 
@@ -15,7 +16,9 @@ vector<int> twoSum(vector<int> &nums,int target){
         else{
             map[nums[i]]=i;
         }
+
     }
+
 
     return result;
 }
