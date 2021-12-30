@@ -8,6 +8,7 @@ int counter(int n){
     n/=10;
   }
   
+  
   return result;
 }
 
