@@ -6,7 +6,6 @@ vector<int> twoSum(vector<int> &nums,int target){
 
     unordered_map<int,int> map;
     vector<int> result(2,0);
-
     for(int i=0;i<nums.size();i++){
         if(map.find(target-nums[i])!=map.end()){
             result[0]=i;
