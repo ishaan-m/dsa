@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//O( n(loglogn) )
 void sieveGenerator(vector<bool> &sieve){
   int n=sieve.size()-1;
 
@@ -11,7 +12,7 @@ void sieveGenerator(vector<bool> &sieve){
         }
       }
   }
-  
+
   sieve[0]=false;
   sieve[1]=false;
   return;
