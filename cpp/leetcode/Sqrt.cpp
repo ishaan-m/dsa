@@ -5,8 +5,7 @@ int mySqrt(int x){
 	for(int i=0;i*i<=x;i++){
 		result=i;
 	}
-
-
+	
 	return result;
 }
 int main(){
